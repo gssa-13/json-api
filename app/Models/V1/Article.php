@@ -1,11 +1,15 @@
 <?php
 
-namespace App\Models;
+namespace App\Models\V1;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Category extends Model
+/**
+ * class Article
+ * @param string $title
+ */
+class Article extends Model
 {
     use HasFactory;
 
