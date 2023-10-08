@@ -6,8 +6,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * class Article
- * @param string $title
+ * @package App\Models\V1
+ * Class Article
+ * @property string $title
+ * @property string $slug
+ * @property string $content
+ *
  */
 class Article extends Model
 {

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\V1;
 
+use App\Http\Resources\V1\ArticleCollection;
 use App\Http\Resources\V1\ArticleResource;
 use Illuminate\Http\Request;
 
@@ -13,9 +14,9 @@ class ArticleController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(): ArticleCollection
     {
-        //
+        return ArticleCollection::make(Article::all());
     }
 
     /**
