@@ -14,3 +14,6 @@ Route::get('articles', [ArticleController::class, 'index'])
 
 Route::get('articles/{article}', [ArticleController::class, 'show'])
     ->name('api.v1.articles.show');
+
+Route::post('articles', [ArticleController::class, 'store'])
+    ->name('api.v1.articles.store');
