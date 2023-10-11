@@ -6,13 +6,11 @@ use Illuminate\Testing\TestResponse;
 
 trait MakesJsonApiRequests
 {
-
     public function json($method, $uri, array $data = [], array $headers = [], $options = 0): TestResponse
     {
         $headers['accept'] = 'application/vnd.api+json';
         return parent::json($method, $uri, $data, $headers, $options);
     }
-
 
     /**
      * Visit the given URI with a POST request, expecting a JSON response.
